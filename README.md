@@ -34,6 +34,10 @@ ng add @angular/material
 
 https://material.angular.io/guide/getting-started  
 
+npm install --save @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout   
+
+
+
 Bibiotecas que serão importadas no projeto:
 
 import { MatInputModule } from '@angular/material/input';
@@ -74,6 +78,10 @@ Por último será necessário um pequeno ajuste no RxJS, que é o responsável p
 Execute o seguinte comando na raiz da aplicação:
 
 npm install rxjs-compat --save 
+
+Como criar um modulo na aplicação:
+
+ng g module autenticacao/login
 
 
 
