@@ -18,11 +18,27 @@ ng --version
 
 Você deverá receber uma mensagem no terminal com a versão do Angular CLI, que deverá ser algo parecido "Angular CLI: 9.0.1", significando que a versão 9.x.x foi instalada no sistema.
 
+Para criar um projeto no angular basta executar o comando.
+
+ng new controleponto
+
+Para executar o projeto basta executar o comando:
+
+ng serve --aot
+
+Logo após digite a URL: localhosyt:4200
+
+
+
+
+
 Por último será necessário um pequeno ajuste no RxJS, que é o responsável pelos recursos reativos. Para que ele funcione corretamente será necessário adicionar o seguinte pacote ao projeto.
 
 Execute o seguinte comando na raiz da aplicação:
 
 npm install rxjs-compat --save 
+
+
 
 ```
 
