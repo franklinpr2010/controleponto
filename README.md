@@ -81,7 +81,21 @@ npm install rxjs-compat --save
 
 Como criar um modulo na aplicação:
 
-ng g module autenticacao/login
+Criando o módulo:  
+ng g module autenticacao/login  
+
+Criando o componente:  
+ng g components autenticacao/login/components/login  
+
+Criando classe de rota do módulo principal:  
+ng g class app-routing.module  
+
+Criando classe de rota do módulo de login: 
+ng g class autenticacao/login/components/logar.component
+
+
+
+
 
 
 
