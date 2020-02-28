@@ -16,6 +16,7 @@ import {
   CadastroPfModule,
   CadastroPfRoutingModule
 } from './autenticacao';
+//importando o routing principal
 import { AppRoutingModule } from './app-routing.module';
 import {
   FuncionarioModule,
@@ -37,8 +38,10 @@ import {
     MatIconModule,
     FlexLayoutModule,
     LoginModule,
+    //Modulo filho Routing de login sendo importado.
     LoginRoutingModule,
     CadastroPjModule,
+    //Modulo filho Routing de cadastro Pj sendo importado.
     CadastroPjRoutingModule,
     CadastroPfModule,
     CadastroPfRoutingModule,
