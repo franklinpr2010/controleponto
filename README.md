@@ -82,6 +82,7 @@ ng g module shared
 
 Diretivas geram atributos que são responsáveis pelos eventos que dá uma característica a algum campo.
 Ex: mascara
+```
 	<input matInput placeholder="CNPJ"
     		formControlName="cnpj" mascara="99.999.999/9999-99">
 
