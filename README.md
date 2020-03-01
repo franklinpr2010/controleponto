@@ -44,6 +44,16 @@ npm install --save @angular/material @angular/cdk @angular/animations hammerjs @
 
 npm install rxjs-compat --save 
 
+```
+npm install -g @angular/cli
+npm install
+npm start
+```
+Acesse a aplicação em [http://localhost:4200](http://localhost:4200)  
+
+*Para sua execução certifique-se também de possuir o [NodeJS](http://nodejs.org).*  
+*A instalação do @angular/cli acima pode necessitar ser executada como admin do sistema*  
+
 ### Como criar um modulo na aplicação:  
 
 ##############Módulo de Login###############
@@ -78,7 +88,7 @@ ng g class autenticacao/cadastro-pj/components/cadastro-pj.component
 
 ng g module shared  
 
-##############Diretivas###############
+ng g directive shared/directives/mascara
 
 Diretivas geram atributos que são responsáveis pelos eventos que dá uma característica a algum campo.
 Ex: mascara
@@ -89,11 +99,15 @@ Ex: mascara
 
 ```
 
-npm install -g @angular/cli
-npm install
-npm start
-```
-Acesse a aplicação em [http://localhost:4200](http://localhost:4200)  
+ //O exports dentro do shared.module vai fazer que a diretiva seja visivel para outros módulos
+ 
+ ```
+  exports: [
+  	MascaraDirective,
+  	TipoPipe,
+    DataPipe
+  ],
 
-*Para sua execução certifique-se também de possuir o [NodeJS](http://nodejs.org).*  
-*A instalação do @angular/cli acima pode necessitar ser executada como admin do sistema*  
+
+
+
