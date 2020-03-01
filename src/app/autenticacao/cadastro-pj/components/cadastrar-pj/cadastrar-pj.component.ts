@@ -43,7 +43,8 @@ export class CadastrarPjComponent implements OnInit {
   cadastrarPj() {
   	if (this.form.invalid) {
   		return;
-  	}
+    }
+    //OBTENDO OS DADOS DO FORMULÁRIO E INSERINDO NO MÓDULO
     const cadastroPj: CadastroPj = this.form.value;
   	this.cadastrarPjService.cadastrar(cadastroPj)
       .subscribe(

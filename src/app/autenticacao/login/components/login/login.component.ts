@@ -50,13 +50,19 @@ export class LoginComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-
+    
+    // inserindo dados do usuário dentro do objeto
     const login: Login = this.form.value;
     this.loginService.logar(login)
+    //subscribe - aguardará o retorno da requisição do servidor
       .subscribe(
+        //Caso de sucesso é o retorno do servidor data
         data => {
+          //armazena o token no localstorage do navegador.
           localStorage['token'] = data['data']['token'];
+          //extraindo o perfil do usuário de dentro do token
           const usuarioData = JSON.parse(
+            //atob - decode de base64, vai pe
             atob(data['data']['token'].split('.')[1]));
           if (usuarioData['role'] == 'ROLE_ADMIN') {
             this.router.navigate(['/admin']);
@@ -69,7 +75,7 @@ export class LoginComponent implements OnInit {
           if (err['status'] == 401) {
             msg = "Email/senha inválido(s)."
           }
-          //vai exibir uma mensagem na tela durante 5 segundos
+          //snackBar - vai exibir uma mensagem na tela durante 5 segundos
           this.snackBar.open(msg, "Erro", { duration: 5000 });
         }
       );

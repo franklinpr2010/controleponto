@@ -15,6 +15,7 @@ import { PtBrMatPaginatorIntl, TipoPipe, DataPipe } from './';
   	TipoPipe,
   	DataPipe
   ],
+  //O exports dentro do shared.module vai fazer que a diretiva MascaraDirective seja visivel para outros módulos
   exports: [
   	MascaraDirective,
   	TipoPipe,
