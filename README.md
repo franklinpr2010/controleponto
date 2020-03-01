@@ -74,6 +74,17 @@ ng g class autenticacao/cadastro-pj/cadastro-pj-routing.module
 ### Criando classe de rota do módulo de cadastro-pj:  
 ng g class autenticacao/cadastro-pj/components/cadastro-pj.component  
 
+##############Módulo Shared###############
+
+ng g module shared  
+
+##############Diretivas###############
+
+Diretivas geram atributos que são responsáveis pelos eventos que dá uma característica a algum campo.
+Ex: mascara
+	<input matInput placeholder="CNPJ"
+    		formControlName="cnpj" mascara="99.999.999/9999-99">
+
 
 ```
 
