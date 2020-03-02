@@ -108,6 +108,13 @@ exports: [
   DataPipe
 ],
 
+##############Módulo de Funcionário###############
+
+ng g module funcionario  
+ng g component funcionario/components/lancamento  
+criar o index.ts para facilitar a exportação.  
+
+
 
 
 
