@@ -68,7 +68,9 @@ ng g components autenticacao/login/components/login
 ng g class autenticacao/login/login-routing.module   
 
 ### Criando classe de rota do módulo de login:  
-ng g class autenticacao/login/components/logar.component  
+ng g class autenticacao/login/components/logar.component 
+
+importar o LoginModule dentro do app.module.ts
 
 ##############Módulo de Pessoa Júridica###############
 
@@ -101,21 +103,25 @@ Ex: mascara
 
  //O exports dentro do shared.module vai fazer que a diretiva MascaraDirective seja visivel para outros módulos
    
-   ```
+```
 exports: [
   MascaraDirective,
   TipoPipe,
   DataPipe
 ],
+```
 
 ##############Módulo de Funcionário###############
 
-ng g module funcionario  
-ng g component funcionario/components/lancamento  
-criar o index.ts para facilitar a exportação.  
+-ng g module funcionario  
+-ng g component funcionario/components/lancamento  
+-criar o index.ts para facilitar a exportação.  
+-importar o FuncionarioModule dentro do app.module.ts
+-criar o arquivo de rota funcionario-routing.module.ts
+-importar a rota dentro de app.module.ts
 
-
-
+Instalar a biblioteca Moments.js  
+npm install moment --save  
 
 
 
