@@ -38,6 +38,8 @@ export class HttpUtilService {
     if (!localStorage['token']) {
       return '';
     }
+    //atob faz o decoder do valor obtido
+    // vai retornar através do JWT, o segundo parametro contém informações do usuário.
     return JSON.parse(atob(localStorage['token'].split('.')[1]));
   }
 

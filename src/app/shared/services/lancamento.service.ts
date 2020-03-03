@@ -9,6 +9,9 @@ import { HttpUtilService } from './http-util.service';
 @Injectable()
 export class LancamentoService {
 
+  //@ViewChild(MatSort, { static: true }) sort: MatSort;
+  //@ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+
   private readonly PATH: string = 'lancamentos';
   private readonly PATH_ULTIMO_LANC = '/funcionario/{funcionarioId}/ultimo';
   private readonly PATH_LANCAMENTOS = '/funcionario/{funcionarioId}';

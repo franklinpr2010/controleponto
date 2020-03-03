@@ -47,6 +47,7 @@ export class CadastrarPfComponent implements OnInit {
 
     const cadastroPf: CadastroPf = this.form.value;
     this.cadastrarPfService.cadastrar(cadastroPf)
+    //O subscribe retorna dois objetos, um no caso de sucesso e outro no caso de erro.
       .subscribe(
         data => {
           const msg: string = "Realize o login para acessar o sistema.";

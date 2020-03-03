@@ -13,6 +13,7 @@ export const FuncionarioRoutes: Routes = [
 		component: FuncionarioComponent,
 		children: [
 		  {
+		    //quando clicar vai diretamente no ponto de trabalho
 			path: '', 
 			component: LancamentoComponent 
 		  },

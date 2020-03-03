@@ -40,6 +40,7 @@ import { CadastrarPfService } from './services';
   	CadastrarPfComponent,
   	CadastroPfComponent
   ],
+  //deve se cadastrar um serviço como um provider.
   providers: [
     CadastrarPfService
   ]
